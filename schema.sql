@@ -52,3 +52,18 @@ CREATE TABLE `comments` (
   `post_id` INT NOT NULL,
   FOREIGN KEY (`post_id`) REFERENCES `posts`(`id`)
 );
+
+-- INSERT CATEGORIES
+
+INSERT INTO `categories` (`name`) VALUE ("Web Development"), 
+                                        ("Programming"), 
+                                        ("Technology"), 
+                                        ("Software Development"), 
+                                        ("Mobile"), 
+                                        ("Database"),
+                                        ("Career in Technology"),
+                                        ("Information Security"),
+                                        ("Data Analysis"),
+                                        ("Tutorials and Guides"),
+                                        ("News and Trends"),
+                                        ("Open Source");
