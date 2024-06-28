@@ -67,3 +67,8 @@ INSERT INTO `categories` (`name`) VALUE ("Web Development"),
                                         ("Tutorials and Guides"),
                                         ("News and Trends"),
                                         ("Open Source");
+
+-- INSERT AUTHOR      
+-- Password: S]r>7n&b!*6F~s5op7?F
+
+INSERT INTO `authors` (`name`, `email`, `password`) VALUE ("Adriano", "adriano@email.com", "$2y$10$1oLBXW.Qs.H043t1QBblA.7HNmP3TYtuejKQqlZslRRb4zL2Un0/K");
