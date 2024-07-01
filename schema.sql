@@ -29,8 +29,10 @@ CREATE TABLE `categories` (
 CREATE TABLE `posts` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `title` VARCHAR(255) NOT NULL,
-  `content` LONGBLOB NOT NULL,
+  `content` MEDIUMTEXT NOT NULL,
   `slug` VARCHAR(255) UNIQUE NOT NULL,
+  `number_of_comments` INT NOT NULL DEFAULT 0,
+  `status` ENUM('visible', 'hidden') DEFAULT 'visible' NOT NULL,
   `author_id` INT NOT NULL,
   `image_url` VARCHAR(255) NOT NULL,
   `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
