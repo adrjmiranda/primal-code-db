@@ -29,6 +29,7 @@ CREATE TABLE `categories` (
 CREATE TABLE `posts` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `title` VARCHAR(255) NOT NULL,
+  `description` VARCHAR(255) NOT NULL,
   `content` MEDIUMTEXT NOT NULL,
   `slug` VARCHAR(255) UNIQUE NOT NULL,
   `number_of_comments` INT NOT NULL DEFAULT 0,
